@@ -20,7 +20,7 @@ if uploaded_file is not None:
 
         # Send to API
         st.write("Predicting...")
-        response = requests.post("https://your-api.onrender.com/predict", files={"file": img_bytes})
+        response = requests.post("https://deployment-yhub.onrender.com", files={"file": img_bytes})
 
         
         if response.status_code == 200:
